@@ -46,15 +46,12 @@
         font-optical-sizing: auto;
         font-style: normal;
       }
-      .container {
-        max-width: 1171px;
-        width: 81%;
-        margin: 0 auto;
-      }
+      
     </style>
   </head>
   <body>
-    <div class="container w-[90%] lg:w-full ">
+    <!-- header  --------------------------------------------- -->
+    <div class="max-w-7xl mx-auto">
       <header class="flex justify-between py-9">
         <div class="logo">
           <h2 class="text-4xl text-[#030712] raleway font-extrabold">
@@ -62,44 +59,70 @@
           </h2>
         </div>
         <div class="bus">
-          <h3 class="text-xl raleway font-bold text-[#1DD100] ">Bus <i class="fa-solid fa-van-shuttle"></i></h3>
+          <h3 class="text-xl raleway font-bold text-[#1DD100]">
+            Bus <i class="fa-solid fa-van-shuttle"></i>
+          </h3>
         </div>
       </header>
     </div>
     <main>
-      <div class="hero-section container w-[90%] lg:w-full  ">
-        <div class=" z-10 mx-auto w-full bg-cover bg-bottom rounded-[36px] pt-[100px] pb-[160px] bg-gradient-to-r from-[#030712] to-[#030712] bg-no-repeat" style="background-image: url(Images/banner.png)">
+      <!-- hero section ---------------------------------------------- -->
+      <div class="hero-section max-w-7xl mx-auto">
+        <div
+          class="z-10 mx-auto w-full bg-cover bg-bottom rounded-[36px] pt-[100px] pb-[160px] bg-gradient-to-r from-[#030712] to-[#030712] bg-no-repeat"
+          style="background-image: url(Images/banner.png)"
+        >
           <div class="hero-overlay bg-opacity-60"></div>
-          <div class=" text-center  space-y-4">
+          <div class="text-center space-y-4">
             <div class="max-w-3xl mx-auto space-y-9">
-              <h1 class="text-4xl lg:text-[64px] raleway font-extrabold text-white">End-to-End Travel with </h1>
-              <h1 class="text-4xl lg:text-[64px] raleway font-extrabold text-[#1DD100]">MK Paribahan</h1>
-              <p class="inter font-normal text-sm lg:text-xl pb-8 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempore libero et, saepe deserunt dignissimos eaque corporis doloribus soluta incidunt!</p>
-              <button class="bg-[#1DD100] px-8 py-5 rounded-md mb-28">Get Started</button>
+              <h1
+                class="text-4xl lg:text-[64px] raleway font-extrabold text-white"
+              >
+                End-to-End Travel with
+              </h1>
+              <h1
+                class="text-4xl lg:text-[64px] raleway font-extrabold text-[#1DD100]"
+              >
+                MK Paribahan
+              </h1>
+              <p class="inter font-normal text-sm lg:text-xl pb-8 text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium tempore libero et, saepe deserunt dignissimos eaque
+                corporis doloribus soluta incidunt!
+              </p>
+              <button class="bg-[#1DD100] px-8 py-5 rounded-md mb-28">
+                Get Started
+              </button>
             </div>
           </div>
         </div>
-        <div class="lg:flex hidden  justify-center gap-4 mt-[-68px] z-50">
-  
-          <div class="stat w-[308px]  rounded-xl border-b-[3px] bg-white py-6 border-[#1DD100]">
+        <!-- state ---------------------------------------- -->
+        <div class="lg:flex hidden justify-center gap-4 mt-[-68px] z-50">
+          <div
+            class="stat w-[308px] rounded-xl border-b-[3px] bg-white py-6 border-[#1DD100]"
+          >
             <div class="stat-figure text-primary">
-              <img src="images/people.png" alt="">
+              <img src="images/people.png" alt="" />
             </div>
             <div class="stat-title">Total Likes</div>
             <div class="stat-value text-primary">25.6K</div>
             <div class="stat-desc">21% more than last month</div>
           </div>
-          
-          <div class="stat w-[308px]  rounded-xl border-b-[3px] bg-white py-6 border-[#1DD100]">
+
+          <div
+            class="stat w-[308px] rounded-xl border-b-[3px] bg-white py-6 border-[#1DD100]"
+          >
             <div class="stat-figure text-secondary">
-              <img src="images/ticket-cupon.png" alt="">
+              <img src="images/ticket-cupon.png" alt="" />
             </div>
             <div class="stat-title">Page Views</div>
             <div class="stat-value text-secondary">2.6M</div>
             <div class="stat-desc">21% more than last month</div>
           </div>
-          
-          <div class="stat w-[308px]  rounded-xl border-b-[3px] bg-white py-6 border-[#1DD100]">
+
+          <div
+            class="stat w-[308px] rounded-xl border-b-[3px] bg-white py-6 border-[#1DD100]"
+          >
             <div class="stat-figure text-secondary">
               <div class="avatar online">
                 <div class="w-16 rounded-full">
@@ -111,90 +134,353 @@
             <div class="stat-title">Tasks done</div>
             <div class="stat-desc text-secondary">31 tasks remaining</div>
           </div>
-          
         </div>
       </div>
-      <div class="best-offer-secton py-[120px] container w-[90%] lg:w-full">
+      <!-- best-offer-secton --------------------------------------------- -->
+      <div class="best-offer-secton py-[120px] max-w-7xl mx-auto">
         <div class="title">
-          <h1 class=" text-center raleway text-[48px] font-bold text-[#030712]">Best offers for you</h1>
+          <h1 class="text-center raleway text-[48px] font-bold text-[#030712]">
+            Best offers for you
+          </h1>
         </div>
-        <div class="cuppon-cards flex justify-start py-12  gap-6 mx-auto">
-          <div class="cupon-card  flex bg-[#FFBF0F] rounded-3xl">
-            <div class="0ff-15 text-left   p-[52px]">
-              <h1 class=" text-[48px] raleway font-extrabold ">15% OFF</h1>
-               <h3 class=" text-2xl font-semibold raleway"> on your next purchase</h3>
-               <h3 class=" text-2xl font-medium raleway">use by January 2024</h3>
+        <div class="cuppon-cards flex justify-center py-12 gap-6">
+          <div class="cupon-card grid grid-cols-12 bg-[#FFBF0F] rounded-3xl">
+            <div class="0ff-15 text-left col-span-6 p-10">
+              <h1 class="text-[48px] raleway font-extrabold">15% OFF</h1>
+              <h3 class="text-2xl font-semibold raleway">
+                on your next purchase
+              </h3>
+              <h3 class="text-2xl font-medium raleway">use by January 2024</h3>
             </div>
-            <img src="images/cupon-devider.png" alt="">
-            <div class="off-20 text-left   p-[52px]">
-              <h1 class=" text-[64px] raleway font-extrabold ">NEW15</h1>
-              <h3 class=" text-2xl font-medium raleway">Coupon Code</h3>
+            <div class="col-span-1">
+              <img class="min-h-full" src="images/cupon-devider.png" alt="" />
+            </div>
+            <div class="off-20 col-span-5 text-left p-[52px]">
+              <h1 class="text-[48px] raleway font-extrabold">NEW15</h1>
+              <h3 class="text-2xl font-medium raleway">Coupon Code</h3>
             </div>
           </div>
-          <div class="cupon-card  flex bg-[#F78C9C] rounded-3xl">
-            <div class="0ff-15 textext-left   p-[52px]">
-              <h1 class=" text-[48px] raleway font-extrabold ">15% OFF</h1>
-               <h3 class=" text-2xl font-semibold raleway"> on your next purchase</h3>
-               <h3 class=" text-2xl font-medium raleway"> use by January 2024</h3>
+          <div class="cupon-card grid grid-cols-12 bg-[#FFBF0F] rounded-3xl">
+            <div class="0ff-15 text-left col-span-6 p-10">
+              <h1 class="text-[48px] raleway font-extrabold">15% OFF</h1>
+              <h3 class="text-2xl font-semibold raleway">
+                on your next purchase
+              </h3>
+              <h3 class="text-2xl font-medium raleway">use by January 2024</h3>
             </div>
-            <img src="images/cupon-devider.png" alt="">
-            <div class="off-20 text-left   p-[52px]">
-              <h1 class=" text-[48px] raleway font-extrabold ">NEW15</h1>
-              <h3 class=" text-2xl font-medium raleway">Coupon Code</h3>
+            <div class="col-span-1">
+              <img class="min-h-full" src="images/cupon-devider.png" alt="" />
+            </div>
+            <div class="off-20 col-span-5 text-left p-[52px]">
+              <h1 class="text-[48px] raleway font-extrabold">NEW15</h1>
+              <h3 class="text-2xl font-medium raleway">Coupon Code</h3>
             </div>
           </div>
         </div>
-       <div class=" flex justify-center ">
-        <button class=" border rounded-md border-[#1DD100] py-5 px-7  text-xl  font-bold text-[#1DD100]">See All Offers</button>
-       </div>
+        <div class="flex justify-center">
+          <button
+            class="border rounded-md border-[#1DD100] py-5 px-7 text-xl font-bold text-[#1DD100]"
+          >
+            See All Offers
+          </button>
+        </div>
       </div>
-      <div class="border-t-2 rounded-tr-[88px] rounded-tl-[88px] border-[#1DD100] bg-[#F7F8F8]">
-        <div class="ticket-date container w-[90%] lg:w-full py-[120px] ">
+      <div
+        class="border-t-2 rounded-tr-[88px] rounded-tl-[88px] border-[#1DD100] bg-[#F7F8F8]"
+      >
+        <div class="ticket-date max-w-7xl mx-auto  pt-[120px]">
           <div class="title text-center w-[50%] mx-auto space-y-6">
-            <h1 class=" text-center raleway text-[40px] font-bold text-[#030712]">P.H Paribahan</h1>
-            <p class="inter text-[18px] font-normal text-[#03071299]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            <h1
+              class="text-center raleway text-[40px] font-bold text-[#030712]"
+            >
+              P.H Paribahan
+            </h1>
+            <p class="inter text-[18px] font-normal text-[#03071299]">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
           </div>
-          <div class="tickit-details grid grid-cols-12 bg-white my-9">
+          <div class="tickit-details grid grid-cols-12 rounded-3xl bg-white my-9">
             <div class="tickit-info col-span-8 p-8">
-              <div class="flex justify-between ">
-                <div class="flex  gap-2">
+              <div class="flex justify-between">
+                <div class="flex gap-2">
                   <div class="">
-                    <img  class="w-[th: 68.57px]" src="images/bus-logo.png" alt=""></div>
-                  <div class=" space-y-2 mb-2 mt-[-8px]">
-                    <h2 class=" text-3xl raleway font-bold text-[#030712]">Greenline Paribahan</h2>
-                    <p class=" text-[#03071299] text-[18px]">Coach-009-WEB ! AC_Business</p></div>
+                    <img
+                      class="w-[th: 68.57px]"
+                      src="images/bus-logo.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="space-y-2 mb-2 mt-[-8px]">
+                    <h2 class="text-3xl raleway font-bold text-[#030712]">
+                      Greenline Paribahan
+                    </h2>
+                    <p class="text-[#03071299] text-[18px]">
+                      Coach-009-WEB ! AC_Business
+                    </p>
+                  </div>
                 </div>
-                <div class=" flex">
-                  <div><img src="images/seat-green.png" alt=""></div>
-                  <h3 class="text-xl raleway font-bold text-[#1DD100] "><span>40 Seats left </span></h3>
+                <div class="flex">
+                  <div><img src="images/seat-green.png" alt="" /></div>
+                  <h3 class="text-xl raleway font-bold text-[#1DD100]">
+                    <span> <span id="total_sets">40 </span> Seats left </span>
+                  </h3>
                 </div>
               </div>
               <div class="rout bg-[#F7F8F8] rounded-3xl p-8">
-                <div class="flex justify-between items-center border-b-2 border-dashed border-[#03071233] py-6">
-                  <h2 class=" text-[18px] font-semibold raleway text-[#03071299]">Route</h2>
-                  <h2 class=" text-[18px] font-semibold raleway text-[#030712] ">Dhaka - Sylhet</h2>
+                <div
+                  class="flex justify-between items-center border-b-2 border-dashed border-[#03071233] py-6"
+                >
+                  <h2
+                    class="text-[18px] font-semibold raleway text-[#03071299]"
+                  >
+                    Route
+                  </h2>
+                  <h2 class="text-[18px] font-semibold raleway text-[#030712]">
+                    Dhaka - Sylhet
+                  </h2>
                 </div>
-                <div class="flex justify-between items-center border-b-2 border-dashed border-[#03071233] py-6">
-                  <h2 class=" text-[18px] font-semibold raleway text-[#03071299]">Departure Time</h2>
-                  <h2 class=" text-[18px] font-semibold raleway text-[#030712]">9:00 PM</h2>
+                <div
+                  class="flex justify-between items-center border-b-2 border-dashed border-[#03071233] py-6"
+                >
+                  <h2
+                    class="text-[18px] font-semibold raleway text-[#03071299]"
+                  >
+                    Departure Time
+                  </h2>
+                  <h2 class="text-[18px] font-semibold raleway text-[#030712]">
+                    9:00 PM
+                  </h2>
                 </div>
-                <div class="flex justify-center gap-6  py-6 *:text-[16px]">
-                  <div class=" px-4 py-5 bg-[#0307120D] text-[#030712CC] rounded-xl">Boarding Point - Laxmipur</div>
-                  <div class=" px-4 py-5 bg-[#0307120D] text-[#030712CC] rounded-xl">Dropping Point - Bogura</div>
-                  <div class=" px-4 py-5 bg-[#0307120D] text-[#030712CC] rounded-xl">Est. Time - 11 Hour</div>
+                <div class="flex justify-center gap-6 py-6 *:text-[16px]">
+                  <div
+                    class="px-4 py-5 bg-[#0307120D] text-[#030712CC] rounded-xl"
+                  >
+                    Boarding Point - Laxmipur
+                  </div>
+                  <div
+                    class="px-4 py-5 bg-[#0307120D] text-[#030712CC] rounded-xl"
+                  >
+                    Dropping Point - Bogura
+                  </div>
+                  <div
+                    class="px-4 py-5 bg-[#0307120D] text-[#030712CC] rounded-xl"
+                  >
+                    Est. Time - 11 Hour
+                  </div>
                 </div>
-                
               </div>
             </div>
-            <div class=" col-span-1"><img  src="images//info-devider.png" alt=""></div>
-            <div class="tickit-price col-span-3 flex flex-col justify-center items-center space-y-6">
-              <div><img src="images/fare.png" alt=""></div>
-              <h2 class=" text-2xl raleway font-semibold text-center">550 Taka</h2>
-              <h2 class=" text-[18px] font-semibold raleway text-[#03071299]">Per Seat</h2>
+            <div class="col-span-1">
+              <img
+                class="min-h-full border-[2px] border-dashed border-[#03071233]"
+                src="images//info-devider.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="tickit-price col-span-3 flex flex-col justify-center items-center space-y-6"
+            >
+              <div><img src="images/fare.png" alt="" /></div>
+              <h2 class="text-2xl raleway font-semibold text-center">
+                <span id="tickit_price">550</span> Taka
+              </h2>
+              <h2 class="text-[18px] font-semibold raleway text-[#03071299]">
+                Per Seat
+              </h2>
             </div>
           </div>
         </div>
+      
+      <!-- tickit-boocking ------------------------------ -->
+      <div
+        class="tickit-boocking grid max-w-7xl mx-auto bg-white rounded-3xl  grid-cols-12 p-8"
+      >
+        <div class="col-span-7 p-6 border-r-2 border-dashed border-[#0307124D] ">
+          <div
+            class="flex justify-between items-center border-b-2 border-dashed border-[#03071233] py-6"
+          >
+            <h2 class="text-[18px] font-semibold raleway text-[#03071299]">
+              Select Your Seat
+            </h2>
+          </div>
+          <div
+            class="flex justify-between items-center border-b-2 border-dashed border-[#03071233] py-6"
+          >
+            <div class="flex items-center gap-2">
+              <div><img src="images/seat-green.png" alt="" /></div>
+              <h2 class="text-[18px] font-semibold raleway text-[#03071299]">
+                Available
+              </h2>
+            </div>
+            <div class="flex items-center gap-2">
+              <div><img src="images/seat-green-filled.png" alt="" /></div>
+              <h2 class="text-[18px] font-semibold raleway text-[#1DD100]">
+                Selected
+              </h2>
+            </div>
+          </div>
+          <div class="flex justify-end items-center py-6">
+            <div>
+              <svg
+                width="26.000000"
+                height="26.000000"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <desc>Created with Pixso.</desc>
+                <defs />
+                <path
+                  id="Vector"
+                  d="M1.91333 17.5922C2.5166 19.0481 3.40039 20.371 4.51465 21.4853C5.62891 22.5996 6.9519 23.4835 8.40771 24.0865C9.86377 24.6896 11.4241 25 13 25C14.5759 25 16.1362 24.6896 17.5923 24.0865C19.0481 23.4835 20.3711 22.5996 21.4854 21.4853C22.5996 20.371 23.4834 19.0481 24.0867 17.5922C24.6897 16.1363 25 14.5759 25 13C25 11.4241 24.6897 9.86371 24.0867 8.40781C23.4834 6.9519 22.5996 5.62903 21.4854 4.51471C20.3711 3.40042 19.0481 2.51651 17.5923 1.91345C16.1362 1.31039 14.5759 1 13 1C11.4241 1 9.86377 1.31039 8.40771 1.91345C6.9519 2.51651 5.62891 3.40042 4.51465 4.51471C3.40039 5.62903 2.5166 6.9519 1.91333 8.40781C1.3103 9.86371 1 11.4241 1 13C1 14.5759 1.3103 16.1363 1.91333 17.5922ZM11.1145 14.8856C11.6145 15.3857 12.2927 15.6667 13 15.6667C13.7073 15.6667 14.3855 15.3857 14.8855 14.8856C15.3857 14.3855 15.6667 13.7072 15.6667 13C15.6667 12.2928 15.3857 11.6145 14.8855 11.1144C14.3855 10.6143 13.7073 10.3333 13 10.3333C12.2927 10.3333 11.6145 10.6143 11.1145 11.1144C10.6143 11.6145 10.3333 12.2928 10.3333 13C10.3333 13.7072 10.6143 14.3855 11.1145 14.8856ZM13 15.6667L13 25M10.3333 13L1.33325 10.3333M15.6667 13L24.6667 10.3333"
+                  stroke="#030712"
+                  stroke-opacity="0.700000"
+                  stroke-width="2.000000"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- tickit select section -------------------------------------- -->
+          <div class="tickits flex justify-between ">
+              <div class="grid grid-cols-5 gap-x-8 gap-y-6">
+              <div class=" col-span-1 flex items-center text-xl font-semibold">A</div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">A1</button></div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">A2</button></div>
+              <div class=" col-span-1 flex items-center text-xl font-semibold">B</div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">B1</button></div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">B2</button></div>
+              <div class=" col-span-1 flex items-center text-xl font-semibold">C</div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">C1</button></div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">C2</button></div>
+              <div class=" col-span-1 flex items-center text-xl font-semibold">D</div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">D1</button></div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">D2</button></div>
+              <div class=" col-span-1 flex items-center text-xl font-semibold">E</div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">E1</button></div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">E2</button></div>
+              <div class=" col-span-1 flex items-center text-xl font-semibold">F</div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">F1</button></div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">F2</button></div>
+              <div class=" col-span-1 flex items-center text-xl font-semibold">G</div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">G1</button></div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">G2</button></div>
+              <div class=" col-span-1 flex items-center text-xl font-semibold">H</div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">H1</button></div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">H2</button></div>
+              <div class=" col-span-1 flex items-center text-xl font-semibold">I</div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">I1</button></div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">I2</button></div>
+              <div class=" col-span-1 flex items-center text-xl font-semibold">J</div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">J1</button></div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">J2</button></div>
+            </div>
+            <div>
+              <div class="grid grid-cols-4 gap-x-8 gap-y-6">
+                <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">A3</button></div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">A4</button></div>
+                <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">B3</button></div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">B4</button></div>
+                <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">C3</button></div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">C4</button></div>
+                <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">D3</button></div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">D4</button></div>
+                <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">E3</button></div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">E4</button></div>
+                <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">F3</button></div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">F4</button></div>
+                <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">G3</button></div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">G4</button></div>
+                <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">H3</button></div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">H4</button></div>
+                <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">I3</button></div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">I4</button></div>
+                <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">J3</button></div>
+              <div class="col-span-2"><button class="btn px-9 h-14 w-[110px] text-xl font-semibold">J4</button></div>
+              </div>
+            </div>
+          </div>
       </div>
+      <div class="col-span-5 p-6">
+        <div
+            class="flex justify-between items-center border-b-2 border-dashed border-[#03071233] py-6"
+          >
+            <h2 class="text-[18px] font-semibold raleway text-[#03071299]">
+              Select Your Seat
+            </h2>
+          </div>
+          <div class="booking-info bg-[#F7F8F8] rounded-xl p-8 my-6">
+            <div class="flex justify-between items-center gap-2 pt-8 pb-4 border-b-2 border-dashed border-[#03071233]">
+              <div class="flex gap-2"><h2 class="text-[18px] font-semibold raleway text-[#030712]">Seat</h2><span class=" px-2 rounded-full bg-[#1DD100]">2</span>
+              </div>
+              <h2 class="text-[18px] font-semibold raleway text-[#030712]">
+                Class
+              </h2>
+              <h2 class="text-[18px] font-semibold raleway text-[#030712]">
+                Price
+              </h2>
+            </div>
+            <div class="flex justify-between items-center gap-2 pt-8 pb-4 border-b-2 border-dashed border-[#03071233]">
+              <h2 class="text-[18px] font-semibold raleway text-[#03071299]">C2</h2>
+              <h2 class="text-[18px] font-semibold raleway text-[#03071299]">
+                Economoy
+              </h2>
+              <h2 class="text-[18px] font-semibold raleway text-[#03071299]">
+                550
+              </h2>
+            </div>
+            <div class="flex justify-between items-center gap-2 pt-8 pb-4">
+              <h2 class="text-[18px] font-semibold raleway text-[#030712] ">Total Price</h2>
+              <h2 class="text-[18px] font-semibold raleway text-[#030712]">
+                BDT <span id="total-price">1100</span>
+              </h2>
+            </div>
+            <div class="flex justify-center items-center gap-2 pt-8 pb-4">
+              <input type="text" placeholder="Have any copupon?" class="input input-bordered w-full max-w-xs outline-none border-none" disabled/>
+              <button class="btn bg-[#1DD100]">Apply</button>
+            </div>
+            <div class="flex justify-between items-center gap-2 pt-8 pb-4">
+              <h2 class="text-[18px] font-semibold raleway text-[#030712] ">Grand Price</h2>
+              <h2 class="text-[18px] font-semibold raleway text-[#030712]">
+                BDT <span id="total-price">1100</span>
+              </h2>
+            </div>
+            <div class="form space-y-4">
+              <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text text-[18px] font-semibold raleway text-[#030712]">
+                    BDT <span id="total-price">Passenger Name*</span>
+                </div>
+                <input type="text" placeholder="Enter your name" class="input input-bordered w-full min-h-[64px] " />
+              </label>
+              <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text text-[18px] font-semibold raleway text-[#030712]">
+                    BDT <span id="total-price">Phone Number*</span>
+                </div>
+                <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full min-h-[64px] " required />
+              </label>
+              <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text text-[18px] font-semibold raleway text-[#030712]">
+                    BDT <span id="total-price">Email ID</span>
+                </div>
+                <input type="text" placeholder="Enter your email id" class="input input-bordered w-full min-h-[64px] " />
+              </label>
+              <button class="w-full min-h-[64px] bg-[#1DD100] rounded-2xl">Wide</button>
+            </div>
+            <div class="flex justify-center items-center gap-11 mt-6">
+              <h2 class="text-[16px] font-normal inter text-[#03071299] ">Terms and Conditions</h2>
+              <h2 class="text-[16px] font-normal inter text-[#03071299]">
+                BDT <span id="total-price">Cancellation Policy</span>
+              </h2>
+            </div>
+          </div>
+      </div>
+    </div>
     </main>
     <footer></footer>
   </body>
