@@ -34,7 +34,7 @@ function removeCounter(){
 function addCard(buttonId){
   const cardHolher=document.getElementById('card-holder');
   
-  cardHolher.innerHTML +=`<div  class="flex justify-between items-center gap-2 pt-8 pb-4 ">
+  cardHolher.innerHTML +=`<div  class="flex justify-between items-center gap-2  pb-4 ">
   <h2 class="text-[18px] font-semibold inter text-[#03071299]">${buttonId}</h2>
   <h2 class="text-[18px] font-semibold inter text-[#03071299]">
     Economoy
