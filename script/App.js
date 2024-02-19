@@ -4,6 +4,7 @@ function addCounter() {
   const buttons = document.getElementsByClassName('btn-add-card');
   const begCount = document.getElementById('beg-count');
   let count = parseInt(begCount.innerText);
+  const limitAlert = document.getElementById('limit-alert');
 
   for (const button of buttons) {
     button.addEventListener('click', () => {
@@ -20,7 +21,7 @@ function addCounter() {
           addedCardIds.push(buttonId);
         } 
       } else {
-        alert("Limit crossed");
+        limitAlert.classList.remove('hidden')
       }
     });
   }
@@ -73,23 +74,35 @@ function addCupon() {
   let grandPriceCell = document.getElementById('grand-price');
   let grandPrice = document.getElementById('grand-price').innerText;
   const discount = document.getElementById('discount');
-
+  const alert =document.getElementById('alert');
 
   if (cupon === newOffer) {
     NowGPrice = grandPrice -(grandPrice * 0.15)
     grandPriceCell.innerText=NowGPrice;
     discount.innerText=(grandPrice * 0.15);
+    cuponId.classList.add('hidden');
+    showDiscount.classList.remove('hidden');
   } else if (cupon === coupleOffer) {
     NowGPrice = grandPrice-(grandPrice * 0.20);
     grandPriceCell.innerText=NowGPrice;
     discount.innerText=(grandPrice * 0.20);
+    cuponId.classList.add('hidden');
+    showDiscount.classList.remove('hidden');
   }else{
-    alert("invallid cupon")
+    alert.classList.remove('hidden');
   }
-  cuponId.classList.add('hidden');
-showDiscount.classList.remove('hidden')
+
 }
 
+function removeAlert(){
+  const alert =document.getElementById('alert');
+  alert.classList.add('hidden');
+}
+
+function removeAlertLimit(){
+  const limitAlert = document.getElementById('limit-alert');
+  limitAlert.classList.add('hidden');
+}
 
 
 

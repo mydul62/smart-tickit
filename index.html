@@ -325,7 +325,11 @@
               </h2>
             </div>
           </div>
-          <div class="flex justify-end items-center py-6">
+          <div  class="flex justify-end items-center py-6">
+            <div id="limit-alert" role="alert" class="alert hidden alert-error w-3/4 mr-5">
+              <svg xmlns="http://www.w3.org/2000/svg" onclick="removeAlertLimit()" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <span>Your tickit limit is:4 limit crosed</span>
+            </div>
             <div class="min-h-[56px] w-[110px] bg-[#0307121A] flex justify-center items-center rounded-xl">
               <svg
                 width="26.000000"
@@ -437,6 +441,10 @@
                 BDT <span id="total-price">0</span>
               </h2>
             </div>
+            <div id="alert" role="alert" class="alert hidden alert-error">
+              <svg xmlns="http://www.w3.org/2000/svg" onclick="removeAlert()" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <span>Enter Vallid cupon.</span>
+            </div>
             <div id="cuppon-section" class="flex justify-center items-center gap-2 pt-8 pb-4 ">
               <input  type="text" placeholder="Have any copupon?" id="cupon" class="input input-bordered w-full max-w-xs outline-none border-none" disabled/>
               <button onclick="addCupon()" class="btn  bg-[#1DD100] text-white">Apply</button>
@@ -445,15 +453,14 @@
             <div id="show-discount" class="flex justify-center items-center gap-2 pt-8 pb-4 hidden">
               <h2 class="text-xl inter font-bold text-[#1DD100]">You get discount= <span id="discount">0</span> tk</h2>
             </div>
-            <div>
-
-            </div>
+            
             <div class="flex justify-between items-center gap-2 pt-8 pb-4">
               <h2 class="text-[18px] font-semibold inter text-[#030712] ">Grand Price</h2>
               <h2 class="text-[18px] font-semibold inter text-[#030712]">
                 BDT <span id="grand-price">0</span>
               </h2>
             </div>
+    
           </div>
           </div>
             <div class="form space-y-4">
